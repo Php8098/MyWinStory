@@ -284,43 +284,82 @@
 			Что о нас думают люди?
 		</div>
 		<!-- /.feedback__title section-title -->
-		<div class="feedback-slider">
-			<div class="feedback-slider__item">
-					<img class="feedback-slider__item__photo" src="img/feedback-img-1.png" alt="">
+		<div class="slider__wrapper">
+			<div class="slider__item">
+					<img src="img/feedback-img-1.png" alt="">
 				<!-- /.feedback-slider__item__photo -->
-				<div class="feedback-slider__item__title">
+				<h3>
 					Алексей Иванов
-				</div>
+				</h3>
 				<!-- /.feedback-slider__item__title -->
-				<div class="feedback-slider__item__desc">
+				<p>
 					Работаю с ними относительно недолго. На данный момент мой заработок составляет 90 000 рублей вмесяц, это далеко не предел, и всё это благодара Джокер 18+.
-				</div>
+				</p>
 				<!-- /.feedback-slider__item__desc -->
 			</div>
 			<!-- /.feedback-slider__item -->
-			<div class="feedback-slider__item">
-					<img class="feedback-slider__item__photo" src="img/feedback-img-2.png" alt="">
+			<div class="slider__item">
+					<img src="img/feedback-img-2.png" alt="">
 				<!-- /.feedback-slider__item__photo -->
-				<div class="feedback-slider__item__title">
+				<h3>
 					Владислав Партенко
-				</div>
+				</h3>
 				<!-- /.feedback-slider__item__title -->
-				<div class="feedback-slider__item__desc">
+				<p>
 					Результаты превзошли мои ожидания: доход за первый месяц работы увеличил мой банк на 94%, в то время как с другими капперами периодически терпел неудачи.
-				</div>
+				</p>
 				<!-- /.feedback-slider__item__desc -->
 				</div>
 			<!-- /.feedback-slider__item -->
-			<div class="feedback-slider__item">
-					<img class="feedback-slider__item__photo" src="img/feedback-img-3.png" alt="">
+			<div class="slider__item">
+					<img src="img/feedback-img-3.png" alt="">
 				<!-- /.feedback-slider__item__photo -->
-				<div class="feedback-slider__item__title">
+				<h3>
 					Алексей Муратов
-				</div>
+				</h3>
 				<!-- /.feedback-slider__item__title -->
-				<div class="feedback-slider__item__desc">
+				<p>
 					Я был восхищён сервисом предоставления услуг, менеджеры Джокер 18+ оперативно отвечали на мои вопросы и консультировали в различных вопросах спортивного беттинга.
+				</p>
+				<!-- /.feedback-slider__item__desc -->
 				</div>
+			<!-- /.feedback-slider__item -->
+			<div class="slider__item">
+					<img src="img/feedback-img-1.png" alt="">
+				<!-- /.feedback-slider__item__photo -->
+				<h3>
+					Алексей Иванов
+				</h3>
+				<!-- /.feedback-slider__item__title -->
+				<p>
+					Работаю с ними относительно недолго. На данный момент мой заработок составляет 90 000 рублей вмесяц, это далеко не предел, и всё это благодара Джокер 18+.
+				</p>
+				<!-- /.feedback-slider__item__desc -->
+			</div>
+			<!-- /.feedback-slider__item -->
+			<div class="slider__item">
+					<img src="img/feedback-img-2.png" alt="">
+				<!-- /.feedback-slider__item__photo -->
+				<h3>
+					Владислав Партенко
+				</h3>
+				<!-- /.feedback-slider__item__title -->
+				<p>
+					Результаты превзошли мои ожидания: доход за первый месяц работы увеличил мой банк на 94%, в то время как с другими капперами периодически терпел неудачи.
+				</p>
+				<!-- /.feedback-slider__item__desc -->
+				</div>
+			<!-- /.feedback-slider__item -->
+			<div class="slider__item">
+					<img src="img/feedback-img-3.png" alt="">
+				<!-- /.feedback-slider__item__photo -->
+				<h3>
+					Алексей Муратов
+				</h3>
+				<!-- /.feedback-slider__item__title -->
+				<p>
+					Я был восхищён сервисом предоставления услуг, менеджеры Джокер 18+ оперативно отвечали на мои вопросы и консультировали в различных вопросах спортивного беттинга.
+				</p>
 				<!-- /.feedback-slider__item__desc -->
 				</div>
 			<!-- /.feedback-slider__item -->
@@ -333,13 +372,12 @@
 	<script src="slick/slick.min.js"></script>
 	<script>
 		$(document).ready(function() {
-			$('.feedback-slider').slick({
-				centerMode: true,
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				arrows: true,
-				infinite: false,
-				initialSlide: 2
+			$('.slider__wrapper').slick({
+			  centerMode: true,
+			  slidesToShow: 3, 
+			  arrows: true, 
+			  infinity:true,
+			  
 			});
 		});
 	</script>
