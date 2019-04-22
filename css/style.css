@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
@@ -187,6 +189,12 @@ li {
   text-align: center;
 }
 
+hr {
+  margin-top: 80px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 60%;
+}
+
 .money-ourClients {
   text-align: center;
 }
@@ -237,12 +245,6 @@ li {
   font-size: 16px;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.6);
-}
-
-.money-ourClients hr {
-  margin-top: 80px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 60%;
 }
 
 .choose {
@@ -365,7 +367,7 @@ li {
 .feedback .slider__wrapper img {
   border-radius: 50%;
   margin-top: -10%;
-  margin-left: 37%;
+  margin-left: 40%;
 }
 
 .feedback .slider__wrapper h3 {
@@ -410,7 +412,7 @@ li {
 }
 
 .feedback .slick-list {
-  padding: 42px 0 !important;
+  padding: 52px 0 !important;
 }
 
 .feedback .slick-active {
@@ -423,7 +425,7 @@ li {
 
 .feedback .slick-next {
   top: 105%;
-  left: 50%;
+  left: 53%;
   background: url("../img/slider-next.png") center no-repeat;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -465,4 +467,185 @@ li {
   -webkit-transform: rotate(180deg) translateY(10px);
   -ms-transform: rotate(180deg) translateY(10px);
   transform: rotate(180deg) translateY(10px);
+}
+
+.question-title {
+  margin-bottom: 47px;
+}
+
+.accordion {
+  position: relative;
+  width: 80%;
+  margin-top: 47px;
+  margin: 15px auto;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.accordion .trigger #checkbox-1 {
+  display: none;
+}
+
+.accordion .trigger #checkbox-1:checked {
+  background-color: slategray;
+}
+
+.accordion .trigger #checkbox-1 label {
+  background-color: slategray;
+}
+
+.accordion .trigger #checkbox-2 {
+  display: none;
+}
+
+.accordion .trigger #checkbox-2:checked {
+  background-color: slategray;
+}
+
+.accordion .trigger #checkbox-2 label {
+  background-color: slategray;
+}
+
+.accordion .trigger #checkbox-3 {
+  display: none;
+}
+
+.accordion .trigger #checkbox-3:checked {
+  background-color: slategray;
+}
+
+.accordion .trigger #checkbox-3 label {
+  background-color: slategray;
+}
+
+.accordion .trigger #checkbox-4 {
+  display: none;
+}
+
+.accordion .trigger #checkbox-4:checked {
+  background-color: slategray;
+}
+
+.accordion .trigger #checkbox-4 label {
+  background-color: slategray;
+}
+
+.accordion .trigger #checkbox-5 {
+  display: none;
+}
+
+.accordion .trigger #checkbox-5:checked {
+  background-color: slategray;
+}
+
+.accordion .trigger #checkbox-5 label {
+  background-color: slategray;
+}
+
+.accordion .checkbox {
+  position: relative;
+  display: block;
+  width: 940px;
+  border-radius: 10px;
+  margin: 0;
+  padding: 20px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.accordion .checkbox img {
+  position: absolute;
+  display: inline-block;
+  right: -54px;
+  top: 28px;
+}
+
+.accordion .content {
+  position: relative;
+  max-height: 0;
+  padding: 0;
+  overflow-y: hidden;
+  width: 940px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #FFF;
+  -webkit-transition: max-height 500ms easy-in-out;
+  -o-transition: max-height 500ms easy-in-out;
+  transition: max-height 500ms easy-in-out;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 22px;
+}
+
+.accordion .content p {
+  margin: 0;
+  width: 540px;
+  margin-left: 80px;
+  margin-bottom: 24px;
+}
+
+#checkbox-1:checked ~ .content {
+  max-height: 350px;
+  -webkit-transition: max-height 500ms easy-in-out;
+  -o-transition: max-height 500ms easy-in-out;
+  transition: max-height 500ms easy-in-out;
+}
+
+#checkbox-2:checked ~ .content {
+  max-height: 350px;
+  -webkit-transition: max-height 500ms easy-in-out;
+  -o-transition: max-height 500ms easy-in-out;
+  transition: max-height 500ms easy-in-out;
+}
+
+#checkbox-3:checked ~ .content {
+  max-height: 350px;
+  -webkit-transition: max-height 500ms easy-in-out;
+  -o-transition: max-height 500ms easy-in-out;
+  transition: max-height 500ms easy-in-out;
+}
+
+#checkbox-4:checked ~ .content {
+  max-height: 350px;
+  -webkit-transition: max-height 500ms easy-in-out;
+  -o-transition: max-height 500ms easy-in-out;
+  transition: max-height 500ms easy-in-out;
+}
+
+#checkbox-5:checked ~ .content {
+  max-height: 350px;
+  -webkit-transition: all 0.5s easy-in-out;
+  -o-transition: all 0.5s easy-in-out;
+  transition: all 0.5s easy-in-out;
+}
+
+.number {
+  font-weight: bold;
+  font-size: 20px;
+  color: #13B05A;
+  margin-right: 30px;
+  margin-left: 14px;
+}
+
+#checkbox-1:checked ~ img {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.next-link {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  text-align: center;
+  color: #13B05A;
+  padding-top: 46px;
+  padding-bottom: 92px;
+  margin: 0 46%;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 }
