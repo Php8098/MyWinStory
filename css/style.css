@@ -412,7 +412,7 @@ hr {
 }
 
 .feedback .slick-list {
-  padding: 52px 0 !important;
+  padding: 72px 0 !important;
 }
 
 .feedback .slick-active {
@@ -424,7 +424,7 @@ hr {
 }
 
 .feedback .slick-next {
-  top: 105%;
+  top: 90%;
   left: 53%;
   background: url("../img/slider-next.png") center no-repeat;
   -webkit-transform: rotate(180deg);
@@ -447,7 +447,7 @@ hr {
 }
 
 .feedback .slick-prev {
-  top: 105%;
+  top: 90%;
   left: 45%;
   background: url("../img/slider-next.png") center no-repeat;
   -webkit-transform: rotate(0deg);
