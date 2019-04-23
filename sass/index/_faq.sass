@@ -1,8 +1,5 @@
-*
-	box-sizing: 
-
-$wetasphalt: #34495e
-$belizehole: #2980b9
+.questions
+	background-color: #fff
 .question-title
 	margin-bottom: 47px
 .accordion
@@ -12,6 +9,7 @@ $belizehole: #2980b9
 	margin: 15px auto
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
 	border-radius: 10px
+	background-color: #fff
 	.trigger
 		#checkbox-1
 			display: none
@@ -55,11 +53,12 @@ $belizehole: #2980b9
 		font-weight: 500
 		cursor: pointer
 		background-color: #fff
-		img
-			position: absolute
-			display: inline-block
-			right: -54px
-			top: 28px
+	img
+		position: absolute
+		display: inline-block
+		right: 4%
+		top: 28px
+		transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1)
 	.content
 		position: relative
 		max-height: 0
@@ -73,7 +72,7 @@ $belizehole: #2980b9
 		font-size: 16px
 		color: rgba(0, 0, 0, 0.5)
 		line-height: 22px
-		transition: all 1s ease-in-out
+		transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1)
 		p
 			margin: 0
 			width: 540px
@@ -81,19 +80,19 @@ $belizehole: #2980b9
 			margin-bottom: 24px
 #checkbox-1:checked ~ .content
 	max-height: 350px
-	transition: all 1s ease-in-out
+	transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1)
 #checkbox-2:checked ~ .content
 	max-height: 350px
-	transition: all 1s ease-in-out
+	transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1)
 #checkbox-3:checked ~ .content
 	max-height: 350px
-	transition: all 1s ease-in-out
+	transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1)
 #checkbox-4:checked ~ .content
 	max-height: 350px
-	transition: all 1s ease-in-out
+	transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1)
 #checkbox-5:checked ~ .content
 	max-height: 350px
-	transition: all 1s ease-in-out
+	transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1)
 .number
 	font-weight: bold
 	font-size: 20px
@@ -104,7 +103,10 @@ $belizehole: #2980b9
 	text-decoration-line: underline
 	text-align: center
 	color: #13B05A
-	padding-top: 46px
-	padding-bottom: 92px
 	margin: 0 46%
+	padding-top: 56px
+	padding-bottom: 92px
 	box-sizing: content-box
+#checkbox-1:checked ~ img
+	transform: rotate(180deg)
+	transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1)

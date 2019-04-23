@@ -1,0 +1,77 @@
+.feedback
+	height: 606px
+	box-sizing: border-box
+	background: linear-gradient(276.39deg, #32B4EC -11.16%, #2274EE 103.03%)
+	&__title
+		color: #fff
+	.slider__wrapper
+	  display: flex
+	  justify-items: center
+	  padding-top: 94px
+	  .slider__item
+	    margin-left: 25px
+	    margin-right: 25px
+	    text-align: center
+	    background-color: #fff
+	    border-radius: 5px
+	    height: 210px
+			img
+			  border-radius: 50%
+			  margin-top: -9%
+			  margin-left: 40%
+			h3
+				padding-top: 14px
+			p
+				font-size: 14px
+				color: #8D8F98
+				width: 75%
+				margin: auto
+	.slick-slide
+
+			.slider__item
+				opacity: 0.5
+		  img
+		    transition: all .3s
+		    border-radius: 50%
+		    opacity: 0.5
+		  h3
+		    transition: all .3s
+		    opacity: 0.5
+		  p
+		    transition: all .3s
+		    opacity: 0.5
+	img
+	  border-radius: 50%
+	.slick-list
+		padding: 72px 0 !important
+	.slick-active
+		opacity: 0.5
+	.slick-center
+		opacity: 1
+	.slick
+		&-next
+			top: 90%
+			left: 53%
+			background: url('../img/slider-next.png') center no-repeat
+			transform: rotate(180deg)
+			width: 37px
+			height: 37px
+			&:before
+				content: ''
+			&:hover
+				height: 46px
+				background: url('../img/arrow-hover.png') center no-repeat
+				transform: rotate(0deg)
+		&-prev
+			top: 90%
+			left: 45%
+			background: url('../img/slider-next.png') center no-repeat
+			transform: rotate(0deg)
+			width: 37px
+			height: 37px
+			&:before
+				content: ''
+			&:hover
+				height: 46px
+				background: url('../img/arrow-hover.png') center no-repeat
+				transform: rotate(180deg) translateY(10px)
